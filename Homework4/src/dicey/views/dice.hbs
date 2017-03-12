@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+
+	<form method="POST" action="">
+			Number of Words: <input type="text" name="numWords">&nbsp;&nbsp; Serarator :<select name="glue">
+				<option value="space">Space " "</option>
+				<option value="dash">Dash - </option>
+				<option value="comma">Comma , </option>
+				<option value="star">Star * </option>
+				<option value="none">None</option>
+			</select>
+			&nbsp;&nbsp;<input type="submit" value="ROLL!">
+	</form>
+
+
+	<p class="para">{{generated}}</p>
+
+
+	<p id="passphrase"><span style="background-color: #FFFF00">{{this.finalString}}</span></p>
+
+	<ul class="back">
+		{{#each this.totalRandom}}
+		    <li>{{this}}&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		{{/each}}
+	</ul>
+	<ul class="back">
+		{{#each this.finalWords}}
+		    <li>{{this}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		{{/each}}
+	</ul>
+
+
+</html>

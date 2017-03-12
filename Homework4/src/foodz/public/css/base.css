@@ -1,0 +1,26 @@
+html {
+	margin: 30px;
+	background-color: #F0F8FF;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.forms {
+	text-align: center;
+}
+
+.back {
+	text-align: center;
+}
+
+.back li {
+	font-size: 20px;
+	list-style: none;
+
+}

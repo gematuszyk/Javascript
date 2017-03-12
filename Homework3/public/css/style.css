@@ -1,0 +1,64 @@
+html body{
+	background-color: grey;
+	margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+h3 {
+		text-align: center;
+		color: black;
+		margin-left: 70px;
+		margin-right: 70px;
+}
+
+p {
+		text-align: center;
+		color: black;
+}
+
+img{
+	width:90%;
+	float:center;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+#randomPos {
+		width:90%;
+		float:center;
+		padding: 70px;
+}
+
+.grey{
+	text-align: center;
+	color: white;
+ }

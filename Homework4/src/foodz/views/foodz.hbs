@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <form class="forms" method="GET" action="">
+    <input type="radio" name="filterCategory" value="breakfast">
+    <label >Breakfast</label>
+    <input type="radio" name="filterCategory" value="lunch">
+    <label >Lunch</label>
+    <input type="radio" name="filterCategory" value="dinner">
+    <label >Dinner</label>
+    <input type="radio" name="filterCategory" value="anytime">
+    <label >Anytime</label>
+    &nbsp;&nbsp;<input type="submit" value="Filter Meals">
+  </form>
+  </br>
+
+  <hr>
+
+  <h2>Recommended Meals {{this.str}}</h2>
+  <ul class="back">
+    {{#each this.meals}}
+        <li>{{this.name}} ({{this.category}})</li>
+        <p>{{this.description}}</p>
+    {{/each}}
+  </ul>
+
+  <hr>
+
+  <h2>Add a Meal Recommendation</h2>
+
+  <form class="forms" method="POST" action="">
+  <p>  Name: <input type="text" name="name">
+</p></p>  Description: <input type="text" name="description"></p>
+<p>
+    <input type="radio" name="category" value="breakfast">
+    <label >Breakfast</label>
+    <input type="radio" name="category" value="lunch">
+    <label >Lunch</label>
+  </p><p>
+    <input type="radio" name="category" value="dinner">
+    <label >Dinner</label>
+    <input type="radio" name="category" value="anytime">
+    <label >Anytime</label>
+  </p>
+  <input type="submit" value="Add Meal">
+  </form>
+
+
+</html>
